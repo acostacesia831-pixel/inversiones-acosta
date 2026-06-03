@@ -17,19 +17,27 @@ export default function App() {
 
   // Sync with localStorage so user data doesn't get wiped out on page reloads
   useEffect(() => {
-    const savedCart = localStorage.getItem('acosta_paz_cart');
-    if (savedCart) {
-      try {
-        setCartItems(JSON.parse(savedCart));
-      } catch (error) {
-        console.error('Failed to parse cart items from localStorage:', error);
+    try {
+      if (typeof window !== 'undefined' && window.localStorage) {
+        const savedCart = window.localStorage.getItem('acosta_paz_cart');
+        if (savedCart) {
+          setCartItems(JSON.parse(savedCart));
+        }
       }
+    } catch (error) {
+      console.warn('Unable to access localStorage on load due to iframe security constraints:', error);
     }
   }, []);
 
   const saveCartToStorage = (updatedCart: CartItem[]) => {
     setCartItems(updatedCart);
-    localStorage.setItem('acosta_paz_cart', JSON.stringify(updatedCart));
+    try {
+      if (typeof window !== 'undefined' && window.localStorage) {
+        window.localStorage.setItem('acosta_paz_cart', JSON.stringify(updatedCart));
+      }
+    } catch (error) {
+      console.warn('Unable to write to localStorage due to iframe security constraints:', error);
+    }
   };
 
   // 1. ADD TO CART

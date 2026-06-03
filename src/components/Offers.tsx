@@ -12,7 +12,7 @@ export default function Offers() {
         
         {/* Section Heading */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="inline-flex items-center space-x-1 bg-amber-55/60 text-amber-800 px-4 py-1.5 rounded-full text-xs font-bold mb-3 border border-amber-200/50">
+          <div className="inline-flex items-center space-x-1 bg-amber-100/60 text-amber-800 px-4 py-1.5 rounded-full text-xs font-bold mb-3 border border-amber-200/50">
             <Sparkles className="h-3.5 w-3.5 text-amber-600" />
             <span>Descuentos Semanales</span>
           </div>

@@ -107,7 +107,6 @@ export default function Products({ onAddToCart }: ProductsProps) {
                     src={product.image}
                     alt={product.name}
                     loading="lazy"
-                    crossOrigin="anonymous"
                     className="object-cover h-full w-full group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>

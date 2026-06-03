@@ -69,7 +69,7 @@ export default function Hero() {
                 id="hero-cta-btn"
                 href="#productos"
                 onClick={(e) => handleScrollClick(e, 'productos')}
-                className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-emerald-990/30 transform hover:-translate-y-0.5 transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500/50"
+                className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-emerald-900/30 transform hover:-translate-y-0.5 transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500/50"
               >
                 <ShoppingBag className="h-5 w-5" />
                 <span>Ver Productos</span>
