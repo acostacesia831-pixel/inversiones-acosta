@@ -1,0 +1,6 @@
+{
+  "name": "Inversiones Acosta Paz",
+  "description": "Página web oficial para el mini súper Inversiones Acosta Paz. Calidad, variedad y buenos precios para toda la familia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
